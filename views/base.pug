@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    title LGDA
+    block scripts 
+    block style
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src="/static/box3.png", alt="error")
+          | LGDA
+        li #[a(href='/') Home]      
+        li #[a(href='/about') About]
+        li #[a(href='/service') Services]
+        li #[a(href='/class') ClassInfo]
+        li #[a(href='/contact') Contact Us]
+
+    block content
+    footer#footer 
+        | Copyright © 2023 Let's Go Dance Academy | All right Reserved
+

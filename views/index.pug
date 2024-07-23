@@ -1,0 +1,73 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Button Example
+    link(href="../static/style.css" rel="stylesheet")
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src="/static/box3.png", alt="error")
+          | LGDA
+        li #[a(href='/') Home]      
+        li #[a(href='/') About]
+        li #[a(href='/') Services]
+        li #[a(href='/') ClassInfo]
+        li #[a(href='/') Contact Us]
+
+    section#intro 
+        div.big Welcome To Let's Go Dance Academy
+        div.small Dance Eat Sleep Repeat
+
+    section#mission
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+              div.card-img
+                img(src="/static/box1.png", alt="error")
+
+              div.card-content
+                p This the best dance academy in the state.
+
+        div.card
+            h3 Dance The Way You Like
+            div.card-box
+              div.card-img
+                img(src="/static/logo.png", alt="error")
+
+              div.card-content
+                p This the best dance academy in the state.
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+              div.card-img
+                img(src="./static/box2.png", alt="error")
+
+              div.card-content
+                p This the best dance academy in the state.
+
+    section#sponsors
+        h2 Our Sponsors
+        div#spon
+          img(src="/static/sponsor1.png", alt="error" , class='spImage')
+          img(src="/static/sponsor2.png", alt="error" , class='spImage')
+          img(src="/static/sponsor3.png", alt="error" , class='spImage')
+          img(src="/static/sponsors4.png", alt="error" , class='spImage')
+
+    footer#footer 
+        | Copyright © 2023 Let's Go Dance Academy | All right Reserved
+
+    
+
+
+    script 
+      include ../static/script.js
+    
+
+
+    //- Template Inheritance in Pug :  we want navigation bar and footer in every page of the website so we can use this.
+    //- so for this we will create one file called base.pug

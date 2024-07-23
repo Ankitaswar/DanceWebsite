@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts
+    script(src='/static/script.js')
+
+block style
+    link(href="../static/style.css" rel="stylesheet")
+
+block content 
+    section#intro 
+        div.big Welcome To Let's Go Dance Academy
+        div.small Dance Eat Sleep Repeat
+
+    section#mission
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+              div.card-img
+                img(src="/static/box1.png", alt="error")
+
+              div.card-content
+                p This the best dance academy in the state.
+
+        div.card
+            h3 Dance The Way You Like
+            div.card-box
+              div.card-img
+                img(src="/static/logo.png", alt="error")
+
+              div.card-content
+                p This the best dance academy in the state.
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+              div.card-img
+                img(src="./static/box2.png", alt="error")
+
+              div.card-content
+                p This the best dance academy in the state.
+
+    section#sponsors
+        h2 Our Sponsors
+        div#spon
+          img(src="/static/sponsor1.png", alt="error" , class='spImage')
+          img(src="/static/sponsor2.png", alt="error" , class='spImage')
+          img(src="/static/sponsor3.png", alt="error" , class='spImage')
+          img(src="/static/sponsors4.png", alt="error" , class='spImage')

@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+h1{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 37px;
+    color: #0056b3;
+}
+
+.myform{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.myInput{
+    width: 50%;
+    margin: 9px auto;
+    padding: 10px 11px;
+    border:3px solid rgb(212, 222, 137);
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn{
+    margin: 12px auto;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.container{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    min-height: 78vh;
+    margin: 35px;
+
+}
+
+/* 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+       	export PATH="$HOME/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<< */
+
+/* sudo mongod --dbpath=/Users/ankitaswar/data/db */
